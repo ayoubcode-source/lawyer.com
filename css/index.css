@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 *{
     padding: 0;
@@ -22,14 +26,8 @@ body{
     z-index: 1000;
 }
 
-.navbar.scrolled {
-    backdrop-filter: blur(5px); /* Blur effect */
-    background-image:none;
-}
 
-.navbar.scrolled a {
-    color: #ffffff; /* New color for links when scrolling, e.g., tomato color */
-}
+
 
 #nav-elements{
     font-weight: 500;
@@ -75,7 +73,7 @@ body{
 
 .navbar-header{
     width: 40%;
-    text-align: end;
+    text-align: start;
 
 }
 
@@ -88,11 +86,13 @@ body{
 
 #bar-3{
     width: 10%;
-}
-#bar-3{
     font-size: 20px;
-    cursor: pointer;
+    display: flex;
+    justify-content: end;
 }
+
+
+
 
 
 
@@ -207,7 +207,7 @@ color: #272727;
 
 
 #practice-areas{
-    height: 35rem;
+    height: 37rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -267,4 +267,89 @@ color: #272727;
 #practice-areas .card-header{
     border: none;
     background-color: transparent;
+}
+
+
+
+.contact-us{
+    margin-top: 100px;
+    height: 40rem;
+    width: 100%;
+    background-color: #6e6020;
+    text-align: center;
+    padding: 100px 100px;
+
+}
+
+.contact-us .title{
+    width: 100%;
+    
+}
+.contact-us .title h1{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-us input{
+    border: 1px gray solid;
+    outline: none;
+    padding: 5px 10px;
+    width: 20rem;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .2s;
+}
+
+.contact-us input:focus{
+    border: 1px solid #272727;
+    box-shadow: 0px 0px 5px 1px rgba(31, 31, 31, 0.8);
+}
+
+.contact-us .contact-form{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us form{
+    text-align: end;
+
+}
+
+form div{
+    margin-bottom: 20px;
+}
+
+form button{
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: #272727;
+}
+
+
+form button:hover{
+    background-color: rgb(39, 39, 39,0.9);
+}
+
+
+
+form .msg{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    outline: none;
+    transition: all .2s;
+    border-radius: 5px;
+}
+
+form .msg:focus{
+    border: 1px solid #272727;
+    box-shadow: 0px 0px 5px 1px rgba(31, 31, 31, 0.8);
+    scale: 1.05;
 }

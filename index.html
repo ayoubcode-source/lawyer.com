@@ -11,23 +11,22 @@
     </head>
 <body>
     <header>
-    <nav class="navbar">
+    <nav class="navbar" dir="rtl">
         <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">عبد الغاني الحادي</a>
+            </div>
+            <ul id="nav-elements" class="nav">
+                <li><a class="active" href="index.html">الرئيسية</a></li>
+                <li><a href="#aboutus">رؤيتنا</a></li>
+                <li><a href="#practice-areas">مجالات الممارسة</a></li>
+                <li><a href="#contactus">اتصل بنا</a></li>
+  
+            </ul>
             
             <ul id="bar-3" class="nav">
                 <a href="#"><i class="fa-solid fa-bars"></i></a>
             </ul>
-            <ul id="nav-elements" class="nav">
-                <li><a href="contactus.html">اتصل بنا</a></li>
-                <li><a href="ourvision.html">رؤيتنا</a></li>
-              <li><a href="practiceareas.html">مجالات الممارسة</a></li>
-              <li><a href="attorneys.html">المحامين</a></li>
-              <li><a class="active" href="index.html">الرئيسية</a></li>
-  
-            </ul>
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">عبد الغاني الحادي</a>
-          </div>
         </div>
       </nav>
 </header>
@@ -43,7 +42,7 @@
         </div>
       </div>
 
-    <div class="about-us">
+    <div id="aboutus" class="about-us">
         <div id="container" class="row">
             <div  class="col-6">
                 <h1>لماذا تحتاج إلينا؟</h1>
@@ -112,6 +111,34 @@
 
     </div>
 
+
+
+    <div id="contactus" class="contact-us">
+        <div class="title">
+        <h1>تواصل معنا</h1>
+        <h6>القانون أمر معقد. يمكن أن يسبب لك مشكلة كبيرة
+             إذا تجاهلت ذلك. دعنا نساعدك</h6>
+        </div>
+
+        <div class="contact-form" dir="rtl">
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="الاسم">
+                <input type="text" placeholder="النسب">
+            </div>
+                <div>
+                    <input type="text" placeholder="البريد الالكتروني">
+                <input type="text" placeholder="الموضوع">
+                </div>
+                <div>
+                <textarea class="msg" placeholder="ماهي مشكلتك ؟"></textarea>
+            </div>
+                <div>
+                    <button class="btn">ارسل الرسالة</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 
